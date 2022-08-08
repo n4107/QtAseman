@@ -151,7 +151,7 @@ void AsemanHttpServer::Private::handle(AsemanHttpServer *parent, QHttpRequest *r
     }
 
     QString adrs;
-    QStringList parts = methodString.split('/');
+    QStringList parts = methodString.split(QStringLiteral("/"));
     const auto cnt = parts.count();
     for (int idx=0; idx<cnt; idx++)
     {
@@ -160,7 +160,7 @@ void AsemanHttpServer::Private::handle(AsemanHttpServer *parent, QHttpRequest *r
         const auto &packs = routesList.value(adrs);
         for (const auto &pk: packs)
         {
-            auto pk_parts = pk.path.split('/');
+            auto pk_parts = pk.path.split(QStringLiteral("/"));
             if (cnt == pk_parts.count())
             {
                 bool is_that = true;

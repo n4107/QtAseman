@@ -24,7 +24,7 @@
 
 #define WITH_SERPENT_FAST_SBOX
 
-const quint16 serpent_sbox_fast_data[] = {
+const quint16 serpent_sbox_fast_data[] __attribute__((unused)) = {
 
 // SBOX: 0 , 0000-FF00
   /* *** 0 - 63 *** */

@@ -72,7 +72,7 @@ macx {
     !contains(QMAKE_HOST.arch, x86_64) {
         LIBS +=  -framework CoreFoundation -framework Carbon -lobjc
     }
-    QT += macextras
+#    QT += macextras
 }
 ios {
     include(private/quickios/quickios.pri)

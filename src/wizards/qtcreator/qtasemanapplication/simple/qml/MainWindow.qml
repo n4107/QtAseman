@@ -23,7 +23,7 @@ AsemanWindow {
         viewport: viewport
 
         ViewportControllerRoute {
-            route: /popup\\:\\/hello\\/world.*/
+            route: '/popup\\:\\/hello\\/world.*/'
             sourceComponent: Label {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
@@ -33,7 +33,7 @@ AsemanWindow {
         }
 
         ViewportControllerRoute {
-            route: /menu\\:\\/hello\\/world.*/
+            route: '/menu\\:\\/hello\\/world.*/'
             sourceComponent: Rectangle {
                 radius: 10
                 anchors.top: parent.verticalCenter

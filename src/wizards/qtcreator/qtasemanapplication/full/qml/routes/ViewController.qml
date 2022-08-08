@@ -17,17 +17,17 @@ ViewportController {
     }
 
     ViewportControllerRoute {
-        route: /dialog\\:\\/general\\/error.*/
+        route: '/dialog\\:\\/general\\/error.*/'
         source: "ErrorDialog.qml"
     }
 
     ViewportControllerRoute {
-        route: /dialog\\:\\/wait/
+        route: '/dialog\\:\\/wait/'
         source: "WaitDialog.qml"
     }
 
     ViewportControllerRoute {
-        route: /\\w+\\:\\/dialog\\/example.*/
+        route: '/\\w+\\:\\/dialog\\/example.*/'
         source: "ExamplePopup.qml"
     }
 }

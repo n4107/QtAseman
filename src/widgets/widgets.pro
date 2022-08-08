@@ -44,7 +44,7 @@ SOURCES += \
 }
 
 macx {
-    QT += macextras
+#    QT += macextras
     DEFINES += MAC_NATIVE_ASEMAN_NOTIFICATION
     SOURCES += \
         $$PWD/asemanmacnativenotification.cpp \
